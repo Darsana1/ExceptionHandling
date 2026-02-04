@@ -1,3 +1,4 @@
+#6 Count object created
 # class Car:
         # count=0
         # def __init__(self):
@@ -9,7 +10,7 @@
 # c3=Car()
 # print(Car.count)
 
-# #7
+# #7Default constructor
 # class College:
 #         def __init__(self,college_name='Unknown'):
 #                 self.col_name=college_name
@@ -20,7 +21,7 @@
 # cl.display()
 # c2.display()
 
-#8
+#8 getattr
 
 # class Book:
 #         def __init__(self,book_name,author):
@@ -30,7 +31,7 @@
 # print("Book_name:",getattr(b1,'book_name'))
 # print("Book Author name:",getattr(b1,'author'))
 
-#9
+#9 hasattr
 # class Book:
 #         def __init__(self,book_name,size):
 #                 self.book_name=book_name
@@ -38,7 +39,7 @@
 # b1=Book("wing of fire","5MB")
 # print(hasattr(b1,'size'))
 
-#10
+#10 setattr
 
 # class College:
 #         def __init__(self,college_name):
@@ -49,7 +50,7 @@
 # print('College Name is updated to: ',c.col_name)
 
 
-#11
+#11 delattr
 # class Book:
 #         def __init__(self,bbok_no,book_name):
 #                 self.no=bbok_no
@@ -59,7 +60,7 @@
 # # print(b.name)
 # print('Attribute Deleted')
 
-#12
+#12 Single Inheritance
 # class Person:
 #         def __init__(self,compny):
 #                 self.company_name=compny
@@ -74,8 +75,20 @@
 # emp.display_emp_details()
 
 
-#13
-
+#13 Multilevel
+# class  Device:
+#         def power_on(self):
+#                 print("Device is powered on.")
+# class Mobile(Device):
+#         def call(self):
+#                 print('Calling........')
+# class SmartPhone(Mobile):
+#         def connection(self):
+#                 print('Internet Enabled..')
+# vivo=SmartPhone()
+# vivo.power_on()
+# vivo.call()
+# vivo.connection()
 
 
 
