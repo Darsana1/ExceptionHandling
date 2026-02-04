@@ -29,3 +29,15 @@
 #         print('File doesnot exist')
 
 # 5
+
+try:
+        num1=int(input("Enter first num: "))
+        num2=int(input("Enter second num: "))
+        print(num1/num2)
+except ValueError:
+        print('Invalid input')
+except ZeroDivisionError as z:
+        print(z)
+
+except:
+        print('Error handled successfully')
