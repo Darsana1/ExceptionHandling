@@ -30,14 +30,34 @@
 
 # 5
 
-try:
-        num1=int(input("Enter first num: "))
-        num2=int(input("Enter second num: "))
-        print(num1/num2)
-except ValueError:
-        print('Invalid input')
-except ZeroDivisionError as z:
-        print(z)
+# try:
+#         num1=int(input("Enter first num: "))
+#         num2=int(input("Enter second num: "))
+#         print(num1/num2)
+# except ValueError:
+#         print('Invalid input')
+# except ZeroDivisionError as z:
+#         print(z)
 
+# except:
+#         print('Error handled successfully')
+
+#6 use else block in try except
+# try:
+#         num1=int(input('Enter first num: '))
+#         num2=int(input('Enter second num:'))
+#         print(num1*num2)
+# except ValueError:
+#         print('Enter valid input.')
+# else:
+#         print("Multiplication completed successfully")
+
+#7 using finally block
+
+try:
+        file=open('oops_wrk.py')
+        print('File Opened')
 except:
-        print('Error handled successfully')
+        print("File operation failed")
+finally:
+        print('file closed successfully')

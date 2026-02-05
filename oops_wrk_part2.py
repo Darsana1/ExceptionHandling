@@ -90,23 +90,116 @@
 # vivo.call()
 # vivo.connection()
 
+#14 Multiple Inheritance
+# class Camera:
+#         def take_photo(self,):
+#                 print("Photo taken..")
+# class MusicPlayer:
+#         def play_music(self):
+#                 print('Music Playing....')
+# class Smartphone(Camera,MusicPlayer):
+#         def show(self):
+#                 print('Smartphone use camera and musicplayer')
+# oppo= Smartphone()
+# oppo.take_photo()
+# oppo.play_music()
+# oppo.show()
 
 
+#15 MRO for multiple inheritance
+
+# class A:
+#     def method_a(self):
+#         print("Method from A")
+
+# class B:
+#     def method_b(self):
+#         print("Method from B")
+
+# class C(A,B):
+#     print('Method from C')
+
+# ob = C()
+# ob.method_a()
+# ob.method_b()
+# print(C.mro())
+
+#16 super() to call parent
+# class A:
+#     def show(self):
+#         print("A")
+
+# class B(A):
+#     def show(self):
+#         super().show()
+
+# class C(A):
+#     def show(self):
+#         super().show()
+
+# class D(B, C):
+#     def show(self):
+#         super().show()
+
+# obj = D()
+# obj.show()
+
+#17
+# class Shape:
+#         def area(self):
+#                 print('Different shapess.')
+# class Circle(Shape):
+#         def area(self):
+#                 radius=4
+#                 area=3.14*(radius**2)
+#                 print("Area of circler: ",area)
+# c=Circle()
+# c.area()
+
+#18super() inside overridden
 
 
+# class Shape:
+#         def area(self):
+#                 print('Shape Drawn..')
+# class Circle(Shape):
+#         def area(self):
+#                 super().area()
+#                 print("Circle drawn")
+# c=Circle()
+# c.area()
+
+#19 Hierarical inheritance
+class Vehicle:
+        def speed(self,speed):
+                print('vehicle speed.')
+class Car(Vehicle):
+        def c_speed(self,car_speed):
+                print('Car speed:',car_speed)
+class Bike(Vehicle):
+        def b_speed(self,bike_speed):
+                print("Bike speed: ",bike_speed)
+b=Bike()
+c=Car()
+c.c_speed(120)
+b.b_speed(90)
 
 
-
-
-
-
-
-
-
-
-
-
-
+#20 Hybrid Inheritance
+class A:
+        def method(self):
+                print('Method A')
+class B(A):
+        def display(self):
+                print("Display B")
+class C(B,A):
+        def show(self):
+                print("Helooo")
+                super().method()
+c=C()
+c.display()
+c.method()
+c.show()
 
 
 
